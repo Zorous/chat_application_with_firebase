@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import AddImg from "../images/add-img.png";
+import AddImg from "../img/add.png";
 
 
 function Register() {
