@@ -3,22 +3,22 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import {getAuth} from "firebase/auth";
 import { getStorage, ref } from "firebase/storage";
+import { getFirestore } from "firebase/firestore";
+
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDzz32wif92o4VOSn4VpqFc-nm5col43sk",
-  authDomain: "open-chatroom-react.firebaseapp.com",
-  projectId: "open-chatroom-react",
-  storageBucket: "open-chatroom-react.appspot.com",
-  messagingSenderId: "1036975715629",
-  appId: "1:1036975715629:web:22f428d07aad0f12ddcfa4",
-  measurementId: "G-6N7BTV0PRM"
+  apiKey: "AIzaSyBUJ5RBAY22lag9BGKwAOMwNgVcEl0L3nU",
+  authDomain: "open-chat-room-639e9.firebaseapp.com",
+  projectId: "open-chat-room-639e9",
+  storageBucket: "open-chat-room-639e9.appspot.com",
+  messagingSenderId: "62707049598",
+  appId: "1:62707049598:web:a9cd9c958f5d66bcc5e42f",
+  measurementId: "G-7SWM8VGYDW"
 };
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
 export const auth = getAuth();
-const analytics = getAnalytics(app);
-
-// Create a root reference
 export const storage = getStorage();
+export const db = getFirestore()
