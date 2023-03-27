@@ -80,6 +80,7 @@ const Input = () => {
       <input
         type="text"
         placeholder="Type something..."
+        onKeyDown={handleSend}
         onChange={(e) => setText(e.target.value)}
         value={text}
       />
