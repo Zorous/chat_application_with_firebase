@@ -15,8 +15,10 @@
 }
 
 .formContainer {
-  background-color: #a7bcff;
-  height: 100vh;
+  background: #FF512F;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DD2476, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,14 +53,14 @@
         padding: 15px;
         border: none;
         width: 250px;
-        border-bottom: 1px solid #a7bcff;
+        border-bottom: 1px solid crimson;
         &::placeholder {
           color: rgb(175, 175, 175);
         }
       }
 
       button {
-        background-color: #7b96ec;
+        background-color : crimson;
         color: white;
         padding: 10px;
         font-weight: bold;
@@ -88,9 +90,10 @@
 }
 
 .home {
-  background: #cc2b5e; 
-  background: -webkit-linear-gradient(to top, #753a88, #cc2b5e);
-  background: linear-gradient(to top, #753a88, #cc2b5e); 
+  background: #FF512F;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DD2476, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
    height: 100vh;
   display: flex;
   align-items: center;
