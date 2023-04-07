@@ -170,9 +170,12 @@
         border-bottom: 1px solid gray;
 
         .searchForm {
+          position: relative;
           padding: 10px;
           display: flex;
-          flex-wrap: wrap;
+          // flex-wrap: wrap;
+          flex-direction: row;
+          justify-content: space-between;
 
           input {
             background-color: transparent;
@@ -184,6 +187,10 @@
               color: lightgray;
             }
           }
+        }
+        #search-btn{
+          position: absolute;
+          right:3px;
         }
       }
 
