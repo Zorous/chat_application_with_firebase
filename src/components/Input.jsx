@@ -1,15 +1,10 @@
 import React, { useContext, useState } from "react";
 import Img from "../img/img.png";
+import Send from "../img/send.png"
 import Attach from "../img/attach.png";
 import { AuthContext } from "../context/AuthContext";
 import { ChatContext } from "../context/ChatContext";
-import {
-  arrayUnion,
-  doc,
-  serverTimestamp,
-  Timestamp,
-  updateDoc,
-} from "firebase/firestore";
+import {arrayUnion,doc,serverTimestamp,Timestamp,updateDoc,} from "firebase/firestore";
 import { db, storage } from "../firebase";
 import { v4 as uuid } from "uuid";
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
@@ -100,7 +95,7 @@ const Input = () => {
         <label htmlFor="file">
           <img src={Img} alt="" />
         </label>
-        <button onClick={handleSend}>Send</button>
+        <button onClick={handleSend}><img src={Send} alt="send" /></button>
       </div>
     </div>
   );
