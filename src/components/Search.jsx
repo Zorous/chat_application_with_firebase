@@ -12,6 +12,7 @@ import {
 } from "firebase/firestore";
 import { db } from "../firebase";
 import { AuthContext } from "../context/AuthContext";
+import search from "../img/search.png";
 
 
 
@@ -92,6 +93,7 @@ const Search = () => {
           onChange={(e) => setUsername(e.target.value)}
           value={username}
         />
+        <img src={search} alt="search" id="search-btn"  onClick={()=>handleSearch()} />
       </div>
       {err && <span>User not found!</span>}
       {user && (
